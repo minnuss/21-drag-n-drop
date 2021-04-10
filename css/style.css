@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.project {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: steelblue;
+}
+
+.project__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__content__empty {
+  min-width: 150px;
+  min-height: 150px;
+  margin: 10px;
+  border: 3px solid black;
+  background: #fff;
+}
+
+.project__content__empty .hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+.project__content__empty--fill {
+  background-image: url("https://source.unsplash.com/random/150x150");
+  height: 145px;
+  width: 145px;
+  cursor: pointer;
+}
+
+.project__content__empty--fill.hold {
+  border: 5px solid orange;
+}
+
+.project__content__empty.hovered {
+  background-color: #333;
+  border-color: #fff;
+  border-style: dashed;
+}
+
+@media (max-width: 800px) {
+  .project__content {
+    flex-direction: column;
+  }
+  .project__content__empty {
+    min-width: 130px;
+    min-height: 130px;
+    margin: 3px;
+  }
+  .project__content__empty--fill {
+    background-image: url("https://source.unsplash.com/random/125x125");
+    height: 125px;
+    width: 125px;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=style.css.map */
